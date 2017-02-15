@@ -1,27 +1,17 @@
 import React, { Component } from 'react';
-import ThemeProvider from 'react-theme-provider';
-import './App.css';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import UserToolbar from './components/UserToolbar';
+import ContentList from './components/ContentList';
 
-/* react-theme-provider
- https://github.com/sm-react/react-theme-provider
-
- <ThemeProvider
-    themes={[greyTheme, altTheme]}
-    themeInd={1}
-    override
-    setCSS={CSSrule}
-  >
-    <ThemedComponent />
-  </ThemeProvider>
-*/
 class App extends Component {
   render() {
     return (
-      <ThemeProvider>
+      <MuiThemeProvider>
         <div className="App">
-          <h1> App! </h1>
+          <UserToolbar />
+          <ContentList />
         </div>
-      </ThemeProvider>
+      </MuiThemeProvider>
     );
   }
 }
