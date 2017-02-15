@@ -1,1 +1,1 @@
-# omni-feed
+# OMNI-Feed
